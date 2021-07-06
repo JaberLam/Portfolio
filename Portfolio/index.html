@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html>
+
+	<head>
+		<meta charset="utf-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="icon" type="image/png" href="img/logo.png" />
+		<link rel="stylesheet" type="text/css" href="design/css/style.css">		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>	
+   		<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script src="js/textanim.js"></script>			
+		<title>Jaber Lamrani | Développeur Web</title>		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.buttons').click(function(){
+					var buttonvalue = $(this).attr('data-filter');
+
+					if(buttonvalue == 'all'){
+						$('.image-filter').show('1000');
+					}
+					else{
+						$('.image-filter').not('.'+buttonvalue).hide('200');
+						$('.image-filter').filter('.'+buttonvalue).show('200');
+					}
+					$(this).addClass('active').siblings().removeClass('active');
+				});
+			});
+		</script>		
+	</head>
+
+	<body id="top">
+		
+		<header>
+			<!-- Menu -->
+		    <nav>		    	
+				<div class="logo">
+				    <img src="img/logo.png" alt="Ceci est mon logo">
+				</div>				
+		    	<ul class="nav-links">
+		    		<li><a href="">Accueil</a></li>
+		    		<li><a href="#propos">À propos</a></li>
+		    		<li><a href="#services">Services</a></li>
+		    		<li><a href="#creation">Créations</a></li>		    				    		
+		    		<li><a href="#contact">CONTACT</a></li>
+					<li><a href="cv.pdf" download="Mon cv">CV</a></li>
+		    	</ul>
+		    	<div class="burger">
+		    		<div class="line1"></div>
+		    		<div class="line2"></div>
+		    		<div class="line3"></div>
+		    	</div>
+		    </nav>
+			
+			<div class="textanim">
+				<div class="slider">
+					<div class="slide active">
+						<div class="container">
+							<div class="caption">
+								<h1>Lamrani Jaber</h1>
+								<h2>Je suis
+									<span
+									class="txt-rotate"
+									data-period="1000"
+									data-rotate='[ "développeur web front-end", "créateur de site web" ]'></span>
+								</h2>								
+							</div>
+							<div class="button">
+								<div class="bouton"><a href="#creation">Voir mes créations</a></div>							
+							 </div>              				
+							</div>       
+						</div>
+					</div>
+				</div>
+			</div>				
+		</header>
+		
+		<!-- Prensentation -->
+		<section id="presentation">			
+  			<svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+    		<path d="M0 0 L50 90 L100 0 V100 H0" fill="#fff" />
+  			</svg> 			
+			<div class="contener">	
+			<i class="fa fa-anchor" aria-hidden="true" style="font-size: 20px;"></i>						
+				<div class="services">
+					<div class="box">
+						<div class="iconBx">							
+							<div class="diamond-shape">
+								<i class="fa fa-plane" aria-hidden="true"></i>
+							</div>							
+						</div>
+						<div class="contener">
+							<h3 style="color: #e74c3c;">GESTION DE PROJETS WEB</h3>
+							<h4 class="separ"></h4>
+							<p>Coordination des étapes de réalisation de l’analyse des besoins à la mise en ligne. Choix de technologies adaptées.</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="iconBx">
+							<i class="fa fa-code" aria-hidden="true" style="color: #e74c3c;"></i>
+						</div>
+						<div class="contener">
+							<h3>DÉVELOPPEMENTS PRÉCIS</h3>
+							<h4 class="separ"></h4>
+							<p>Développement sur mesure. Des outils adaptés à votre coeur de métier,
+							applications & solutions personnalisées.</p>
+						</div>
+					</div>			
+
+					<div class="box">
+						<div class="iconBx">
+							<i class="fa fa-trophy" aria-hidden="true" style="color: #e74c3c;"></i>
+						</div>
+						<div class="contener">
+							<h3>RÉFÉRENCEMENT NATUREL</h3>
+							<h4 class="separ"></h4>
+							<p>Respect des règles SEO. Des pages optimisées pour un référencement optimal. Amélioration de la visibilité du site web.</p>
+						</div>
+					</div>	
+
+					<div class="box">
+						<div class="iconBx">
+							<i class="fa fa-retweet" aria-hidden="true" style="color: #e74c3c;"></i>
+						</div>
+						<div class="contener">
+							<h3>RESPONSIVE DESIGN</h3>
+							<h4 class="separ"></h4>
+							<p>Élaboration de sites offrant une expérience de lecture et de navigation optimales, quelle que soit l'appareil (smartphone, tablettes, desktop).</p>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<h4 class="separation"></h4>
+		<!-- A Propos -->
+		<section id="propos">
+			<div class="contenu">
+				<div class="photo"><img src="img/image1.png"></div>
+				<div class="texte">
+					<h4><span></span>PRÉSENTATION</h4>
+					<p>Passionné par le web, j'ai décidé de m'orienter en tant que développeur web front-end. Mon expérience acquise au fil de ma formation me permet de mieux comprendre les attentes d'un client et de répondre au besoin demandé en fonction du domaine d'activité.<br><br> 
+
+					   Actuellement à la recherche d'un stage de 3 mois en tant que développeur web, mon objectif est d’intégrer une entreprise qui a le sens du service, où l’informatique et/ou le web est l’intérêt pour les nouvelles technologies soient au coeur de ses objectifs.</p><br><br> 
+					<a href="#creation">Voir mes créations</a>		
+				</div>				             
+	        </div>
+		</section>
+
+		<!-- Services -->
+		<section class="service" id="services">
+			<div class="cont">
+    			<div class="slidere">
+			        <ul class="slides">
+					<li>						
+						<h3>Mes services&nbsp;&nbsp;&nbsp;&nbsp;<span></span></h3>
+						<h4>Projets web</h4>					
+						<p>Conception et gestion de Site vitrine, e-commerce, évènementiel, corporate, <br>application mobile.</p>
+						<h4>Graphisme & Webdesign</h4>					
+						<p>Découpage et intégration d'une maquette, templates web, cartes de visites...</p>
+						<h4>Domaines et hébergement</h4>						
+						<p>Recherche d'offres d’hébergement et de nom de domaine adaptées à vos besoins. <br>Gestion et configuration des serveurs.</p>	
+					</li>
+					<li>
+						<h3>Mes services&nbsp;&nbsp;&nbsp;&nbsp;<span></span></h3>
+						<h4>Développement web</h4>
+						<p>Codage sur mesure respectueux des standards du Web. Veille technologique quotidienne <br>pour être informé des dernières évolutions en matière de développement Web.</p>
+						<h4>Référencement naturel (SEO)</h4>
+						<p>Amélioration de la visibilité du site web sur Google. Installation et mise en place d'outils <br> permettent d'avoir un suivis. Conseils et accompagnement SEO.</p>
+						<h4>Mise En Place & Gestion De CMS</h4>
+						<p>Installation et configuration de systèmes de gestion de contenu (CMS) WordPress.</p>
+					</li>
+					<li>
+						<h3>Mes services&nbsp;&nbsp;&nbsp;&nbsp;<span></span></h3>
+						<h4>Adaptation multi-plateformes</h4>
+						<p>Ergonomie et compatibilité tous supports (tablette, smatphone, liseuses, <br>moniteurs d'ordinateur de bureau).</p>
+						<h4>Formation</h4>
+						<p>Être autonome, formation aux outils de gestion de contenu et de publication en ligne : <br>CMS, manipulations HTML, ajouter, modifier ou supprimer du contenu...</p>
+						<h4>Page web dynamique</h4>
+						<p>Dynamisme des pages avec utilisation des outils tels que JavaScript, jQuery...</p>
+					</li>					
+				</ul>
+	        		<ol>
+			            <li class="act"></li>
+			            <li></li>
+			            <li></li>			            			            
+	       			 </ol>
+    			</div>
+			</div>
+			<i class="fa fa-camera-retro" aria-hidden="true" style="font-size: 20px;"></i>
+			<i class="fa fa-file-text-o" aria-hidden="true" style="font-size: 20px;"></i>
+			<i class="fa fa-desktop" aria-hidden="true" style="font-size: 20px;"></i>
+			<div class="picture"><img src="img/image2.jpg"></div>				
+		</section>
+
+		<!-- Portfolio -->
+		<section class="sec" id="creation">
+			<div class="content">
+				<div class="mxw800p">
+					<h3>MES PROJETS</h3>
+					<p>Un aperçu de quelques projets sur lesquels j'ai travaillé</p>
+					<h4 class="separateur"><i class="fa fa-circle" aria-hidden="true" style="color: #e74c3c; font-size: 10px;"></i></h4>
+					<ul>
+						<li>
+							<a class="buttons active" data-filter="tout">&nbsp;&nbsp;&nbsp;Tout&nbsp;&nbsp;&nbsp;<span style="color: 
+							#b8b8b8;">/</span></a>
+							<a class="buttons" data-filter="conception">&nbsp;&nbsp;&nbsp;Conception Graphique&nbsp;&nbsp;&nbsp;<span style="color: #b8b8b8;">/</span></a>
+							<a class="buttons" data-filter="application">&nbsp;&nbsp;&nbsp;Application&nbsp;&nbsp;&nbsp;<span style="color: #b8b8b8;">/</span></a>
+							<a class="buttons" data-filter="developpement">&nbsp;&nbsp;&nbsp;Développement Web&nbsp;&nbsp;&nbsp;<span style="color: #b8b8b8;">/</span></a>
+							<a class="buttons" data-filter="jeux">Jeux</a>
+						</li>
+					</ul>
+				</div>
+				<div class="work">
+					<a href=""><img src="img/1.jpg" alt="project img" class="anim image-filter tout jeux"></a>
+					<a href=""><img src="img/3.jpg" alt="project img" class="anim image-filter tout conception"></a>
+					<a href=""><img src="img/4.jpg" alt="project img" class="anim image-filter tout developpement"></a>
+					<a href=""><img src="img/5.png" alt="project img" class="anim image-filter tout conception"></a>
+					<a href=""><img src="img/6.png" alt="project img" class="anim image-filter tout developpement"></a>
+					<a href=""><img src="img/7.png" alt="project img" class="anim image-filter tout developpement"></a>					
+				</div>				
+			</div>			
+		</section>  	
+
+		<section id="titre">
+			<div class="ecris">
+				<img src="img/img2.png" class="quote">			
+				<span>Des solutions adaptées à votre domaine d'activité !</span>
+				<img src="img/img.png" class="quote">
+			</div>			
+		</section>
+		
+		<!-- Contact -->
+		<section class="sec study" id="contact">
+			<div class="content">
+				<div class="mxw800p">
+					<h3>ME CONTACTER</h3>
+					<p>Un projet, une idée ou simplement une question ? N'hésitez pas à m'envoyer un message.</p>
+					<h4 class="separateur"><i class="fa fa-circle" aria-hidden="true" style="color: #e74c3c; font-size: 10px;"></i>
+					</h4>
+				</div>
+
+				<div class="contien">
+					<div class="contactinfo">
+						<div>
+							<h2>Information</h2>
+							<ul class="info">
+								<li>
+									<span><img src="img/location.png"></span>
+									<span class="groot">
+										84 Rue Camille Sauvageau
+										33800 Bordeaux
+									</span>
+								</li>
+								<li>
+									<span><img src="img/mail.png"></span>
+									<span>jlamrani@yahoo.com</span>
+								</li>
+								<li>
+									<span><img src="img/call.png"></span>
+									<span>06.22.40.78.72</span>
+								</li>
+							</ul>
+						</div>
+						<ul class="sci">
+							<li><a href="#"><img src="img/linkedin.png"></a></li>
+							<li><a href="#"><img src="img/email.png"></a></li>
+							<li><a href="#"><img src="img/skype.png"></a></li>
+						</ul>
+					</div>
+
+					<div class="contactForm">
+						<h2>M'envoyer un message</h2>
+						<div class="formBox">
+							<div class="inputBox w50">
+								<input type="text" required>
+								<span>Nom</span>
+							</div>
+							<div class="inputBox w50">
+								<input type="text" required>
+								<span>Prénom</span>
+							</div>
+							<div class="inputBox w50">
+								<input type="email" required>
+								<span>E-mail</span>
+							</div>
+							<div class="inputBox w50">
+								<input type="text" required>
+								<span>Téléphone</span>
+							</div>
+							<div class="inputBox w100">
+								<textarea required></textarea>
+								<span>Votre Message...</span>
+							</div>
+							<div class="inputBox w100">
+								<input type="submit" value="Envoyer">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		<!-- Footer -->
+		<footer>
+			<h3>Contactez-moi. <span style="font-weight: 700;">N'hésitez PAS !</span></h3>
+			<p>Pour toute question relative à un projet web, n'hésitez surtout pas à m'envoyer un message via la page contact.</p>
+			<div class="bb"><a href="#contact">Me contactez</a></div>			
+				<div class="textes">					
+					<ul>
+						<p class="tt">Me retrouver sur : </p>
+						<li><a href="mailto:contact@example.com"><i style="color: #999999;" class="fa fa-envelope-o" aria-hidden="true"></i></a></li>						
+						<li><a href="https://www.linkedin.com/in/jaber-lamrani-7812b8a5/"><i style="color: #999999;" class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="skype:live:.cid.1388ddbf71e58c2f?call"><i style="color: #999999;" class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="https://wa.me/33622407872"><i style="color: #999999;" class="fa fa-whatsapp" aria-hidden="true"></i></a></li>		
+					</ul>					
+					<p>2020 &copy; Copyright - Jaber Lamrani. Tout droit réservé.</p>
+				</div>
+		</footer>
+		<div class="backToTop">
+			<a href="#"><i class="fa fa-arrow-up"></i></a>
+		  </div>		
+		<script src="js/app.js"></script>
+		<script src="js/slide.js"></script>
+		<script src="js/textanim.js"></script>
+		<script src="js/scroll.js"></script>		
+
+	</body>
+	</html>
